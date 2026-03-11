@@ -62,7 +62,7 @@ Chef4U supports two main user roles:
 1. **Download or Clone the Repository**  
    - Download the project ZIP file or clone the repository using the command:  
      ```bash
-     git clone https://github.com/zipporahpozen/Chef4U.git
+     git clone https://github.com/zipporahpozen/Chef4u.git
      ```
 
 2. **Open the Project Folder**  
