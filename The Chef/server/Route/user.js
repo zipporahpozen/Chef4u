@@ -1,0 +1,15 @@
+import express from 'express';
+const router = express.Router();
+import * as User from '../Controller/user.js';
+import * as Order from '../Controller/order.js';
+import {authenticate}from '../MiddleWare/middle.js';
+import upload from '../MiddleWare/upload.js';
+router.post("/register",upload.single('image'),User.addUser);
+router.post('/login',User.login);
+router.post("/addAsFollow/:id",authenticate,User.addAsFollowToChef);
+router.post("/order",authenticate,Order.addOrder);
+router.put("/updateUser",authenticate,User.updateUser);
+router.get("/",User.getAllUser);
+router.get('/getById',authenticate,User.getUserById);
+// router.get("/order",authenticate,Order.addOrder);
+export default router;

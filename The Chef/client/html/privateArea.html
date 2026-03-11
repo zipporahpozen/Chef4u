@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Area</title>
+  <link rel="stylesheet" href="../css/privateArea.css">
+</head>
+<body>
+  <nav>
+    <a href="../html/home.html">Home</a>
+    <div id="navLinks"></div> <!-- ניווט דינאמי יתווסף כאן -->
+  </nav>
+
+  <main>
+    <h1>Personal Area</h1>
+    <div class="container">
+      <!-- אזורי מידע עבור כל סוג משתמש -->
+      
+      <!-- שף -->
+      <div id="chefInfo" class="user-info">
+        <h2>Chef Details</h2>
+        <img id="chefImage" class="profile-image" src="" alt="Chef Image">
+        <p>Name: <span id="chefName"></span></p>
+        <p>Email: <span id="chefEmail"></span></p>
+        <p>Description: <span id="chefDescription"></span></p>
+        <p>Category: <span id="chefCategory"></span></p>
+        <p>Type of Kitchen: <span id="chefTypeKitchen"></span></p>
+        <p>Status: <span id="chefStatus"></span></p>
+        <p>Followers Count: <span id="chefFollowersCount"></span></p>
+        <p>Menu Count: <span id="chefMenuCount"></span></p>
+        <button id="galleryButton">Load Gallery</button>
+        <div class="gallery" id="chefGallery"></div> <!-- גלריית תמונות -->
+      </div>
+
+      <!-- מנהל -->
+      <div id="adminInfo" class="user-info">
+        <h2>Admin Details</h2>
+        <p>Name: <span id="adminName"></span></p>
+        <p>Email: <span id="adminEmail"></span></p>
+        <p>My Chefs Count: <span id="adminMyChefsCount"></span></p>
+        <p>My Orders Count: <span id="adminMyOrdersCount"></span></p>
+      </div>
+
+      <!-- לקוח -->
+      <div id="customerInfo" class="user-info">
+        <h2>Customer Details</h2>
+        <p>Name: <span id="customerName"></span></p>
+        <p>Email: <span id="customerEmail"></span></p>
+        <p>My Chefs Count: <span id="customerMyChefsCount"></span></p>
+        <p>My Orders Count: <span id="customerMyOrdersCount"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2024 Your Company
+  </footer>
+
+  <script src="../js/privateArea.js"></script>
+</body>
+</html>

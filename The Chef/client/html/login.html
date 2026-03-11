@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" id="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="email" id="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" id="password" required>
+                  
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="isChef"> I am a chef
+                </div>
+                <button type="submit" onclick="login();return false">Login</button>
+                <a href="../html/register.html">משתמש חדש-> לחץ כאן</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <script src="../js/login.js"></script>
+    </footer>
+</body>
+</html>

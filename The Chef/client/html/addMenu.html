@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Menu</title>
+    <link rel="stylesheet" href="../css/addMenu.css">
+</head>
+<body>
+    <h1>Create a Menu</h1>
+    <form id="menuForm">
+        <label for="menuName">Menu Name:</label>
+        <input type="text" id="menuName" name="menuName" required><br>
+
+        <label for="menuCategory">Menu Category:</label>
+        <input type="text" id="menuCategory" name="menuCategory"><br>
+
+        <label for="menuTypeKitchen">Type of Kitchen:</label>
+        <input type="text" id="menuTypeKitchen" name="menuTypeKitchen"><br>
+
+        <div id="dishesContainer">
+            <div class="dish" data-index="0">
+                <h3>Dish 1</h3>
+                <label for="dishName1">Name:</label>
+                <input type="text" id="dishName1" name="dishName[]"><br>
+
+                <label for="dishCategory1">Category:</label>
+                <input type="text" id="dishCategory1" name="dishCategory[]"><br>
+
+                <label for="dishPrice1">Price:</label>
+                <input type="number" id="dishPrice1" name="dishPrice[]" min="0"><br>
+
+                <label for="dishImage1">Image:</label>
+                <input type="file" id="dishImage1" name="dishImage[]"><br>
+            </div>
+        </div>
+
+        <button type="button" id="addDishBtn">Add Dish</button><br>
+
+        <label for="menuDescription">Description:</label>
+        <textarea id="menuDescription" name="menuDescription"></textarea><br>
+
+        <label for="menuImage">Menu Image:</label>
+        <input type="file" id="menuImage" name="menuImage"><br>
+
+        <button type="submit">Create Menu</button>
+    </form>
+
+    <script src="../js/addMenu.js"></script>
+</body>
+</html>

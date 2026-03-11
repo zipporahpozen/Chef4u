@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #222;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Main Container Styles */
+#chefs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 60px; /* to avoid overlap with the nav */
+}
+
+.chef-card {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chef-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.chef-card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.chef-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* כלל הכפתורים */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.like-button {
+    background-color: #007bff;
+}
+
+.menus-button {
+    background-color: #28a745;
+}
+
+.admin-button {
+    background-color: #dc3545;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+.approve-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.approve-button:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ddd;
+    background-color: #121212; /* צבע כהה לרקע כללי */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background: #1e1e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav a {
+    color: #ff9800; /* צבע אורנג' */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #e0e0e0;
+    margin-top: 20px;
+    font-size: 2.5em; /* הגדלת גודל הכותרת הראשית */
+    font-weight: 600;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px; /* הרחבת רוחב הקונטיינר */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-info {
+    display: none;
+    background: #1e1e1e;
+    border-radius: 12px; /* פינות עגלגלות יותר */
+    padding: 30px; /* הגדלת ריווח פנימי */
+    margin-bottom: 30px; /* הגדלת ריווח חיצוני */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* צללה מודגשת יותר */
+    transition: background 0.3s ease, transform 0.3s ease; /* הוספת מעבר לתנועה */
+  }
+  
+  .user-info:hover {
+    background: #333;
+    transform: translateY(-5px); /* הוספת אפקט הרמה כשמעבירים מעל */
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px; /* הגדלת גודל התמונה */
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ff9800; /* הוספת מסגרת צבעונית לתמונה */
+  }
+  
+  h2 {
+    color: #ff9800; /* צבע אורנג' להדגשה */
+    margin-bottom: 15px; /* הגדלת רווח מתחת לכותרת */
+    font-size: 1.8em; /* הגדלת גודל הכותרת המשנית */
+  }
+  
+  p {
+    margin: 10px 0; /* הגדלת רווח בין הפסקאות */
+    font-size: 18px; /* הגדלת גודל הטקסט */
+    line-height: 1.6; /* רווח בין שורות */
+  }
+  
+  span {
+    font-weight: bold;
+    color: #e0e0e0; /* צבע טקסט ניגוד */
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #888;
+    background-color: #1e1e1e;
+    border-top: 1px solid #333; /* הוספת קו מפריד עליון */
+  }
+  
+  button {
+    background-color: #ff9800; /* צבע רקע */
+    color: #fff; /* צבע טקסט */
+    border: none;
+    border-radius: 8px; /* פינות עגלגלות */
+    padding: 10px 20px; /* ריווח פנימי */
+    font-size: 16px; /* גודל טקסט */
+    cursor: pointer; /* סמן יד */
+    transition: background 0.3s ease, transform 0.3s ease; /* מעברים חלקים */
+  }
+  
+  button:hover {
+    background-color: #e68a00; /* שינוי צבע בעת מעבר מעל */
+    transform: scale(1.05); /* הקטנה קלה של הכפתור */
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  

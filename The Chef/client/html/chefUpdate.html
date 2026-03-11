@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Chef</title>
+    <link rel="stylesheet" href="../css/chefUpdate.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update Chef</h1>
+        <form id="updateForm">
+            <input type="hidden" id="chefId">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <label for="image">Image URL:</label>
+            <input type="text" id="image">
+            <label for="galery">Gallery (comma-separated URLs):</label>
+            <input type="text" id="galery">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone">
+            <label for="category">Category:</label>
+            <input type="text" id="category">
+            <label for="typeKitchen">Type of Kitchen:</label>
+            <input type="text" id="typeKitchen">
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea>
+            <div class="button-group">
+                <button type="submit" class="button update">Save Changes</button>
+                <button type="button" id="deleteButton" class="button delete">Delete Chef</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/chefUpdate.js"></script>
+</body>
+</html>

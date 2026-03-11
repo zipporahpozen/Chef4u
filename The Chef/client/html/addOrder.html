@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Menu</title>
+  <link rel="stylesheet" href="../css/addOrder.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Menu</h1>
+    <form id="orderForm">
+      <div class="menu-details">
+        <img id="menuImage" src="" alt="Menu Image">
+        <h2 id="menuName">Menu Name</h2>
+        <p id="chefName">Chef Name</p>
+        <p id="menuDescription">Menu Description</p>
+      </div>
+      
+      <fieldset>
+        <legend>Select Dishes</legend>
+        <div id="dishesContainer"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Number of Dishes</legend>
+        <input type="number" name="numberOfDishes" id="numberOfDishes" min="1" value="1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Date</legend>
+        <input type="date" id="orderDate" name="orderDate"min="" required>
+      </fieldset>
+
+      <div class="price">
+        <h3>Total Price: $<span name="totalPrice" id="totalPrice">0.00</span></h3>
+      </div>
+
+      <button type="submit" name="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <script src="../js/addOrder.js" defer></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Menu</title>
+    <link rel="stylesheet" href="../css/addOrder.css">
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <img src="header-image.jpg" alt="Header Image">
+            <div class="header-text">Order Your Menu</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="order-form-container">
+            <h1>Order Menu</h1>
+            <form id="orderForm">
+                <div class="menu-details">
+                    <img id="menuImage" src="" alt="Menu Image">
+                    <h2 id="menuName">Menu Name</h2>
+                    <p id="chefName">Chef Name</p>
+                    <p id="menuDescription">Menu Description</p>
+                </div>
+                
+                <fieldset>
+                    <legend>Select Dishes</legend>
+                    <div id="dishesContainer"></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Number of Dishes</legend>
+                    <input type="number" id="numberOfDishes" min="1" value="1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select Date</legend>
+                    <input type="date" id="orderDate" min="" required>
+                </fieldset>
+
+                <div class="price">
+                    <h3>Total Price: $<span id="totalPrice">0.00</span></h3>
+                </div>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../js/addOrder.js"></script>
+</body>
+</html> -->
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+    
+    <section class="order">
+        <h1>Order Your Menu</h1>
+        <form id="orderForm">
+            <img id="menuImage" src="" alt="Menu Image">
+            <h2 id="menuName"></h2>
+            <p id="chefName"></p>
+            <p id="menuDescription"></p>
+
+            <div id="dishesContainer"></div>
+
+            <label for="numberOfDishes">Number of Dishes:</label>
+            <input type="number" id="numberOfDishes" name="numberOfDishes" min="1" value="1">
+
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
+
+            <label for="orderDate">Order Date:</label>
+            <input type="date" id="orderDate" name="orderDate" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+ -->

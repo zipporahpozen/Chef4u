@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        /* פשוט סגנון בסיסי לשדות הנוספים */
+        .additional-fields {
+            display: none;
+            margin-top: 15px;
+        }
+        .additional-fields.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="register-box ">
+            <h1>Register</h1>
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" id="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" id="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="textbox" class="password-container">
+                    <input type="password" placeholder="Password" id="password" required>
+                    
+                    
+                    <div id="passwordError" class="error"></div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="isChef" onchange="toggleChefFields()"> I am a chef
+                </div>
+                <div class="additional-fields" id="chefFields">
+                    <div class="textbox">
+                        <textarea placeholder="Description" id="description"></textarea>
+                    </div>
+                    <div class="textbox">
+                        <input type="file" id="imageUpload" name="imageUpload" accept="image/*"><br><br>
+                        <!-- <input type="file" id="imageUpload" accept="image/*"> -->
+                    </div>
+                </div>
+                <button type="submit" onclick="register();return false">Register</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+        <script src="../js/register.js"></script>
+    </footer>
+</body>
+</html>

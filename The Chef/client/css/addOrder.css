@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 8px;
+  }
+  
+  h1, h2, p {
+    color: #f9f9f9;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-details img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  fieldset {
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #555;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #f9f9f9;
+  }
+  
+  input[type="number"],
+  input[type="date"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+  }
+  
+  input[type="date"] {
+    width: 100%;
+  }
+  
+  button {
+    background-color: #ff5722;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #e64a19;
+  }
+  
+  .price {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .price h3 {
+    font-size: 24px;
+  }
+  
+  .dish {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .dish img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .dish label {
+    margin: 0;
+  }
+  
